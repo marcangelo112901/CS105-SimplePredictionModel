@@ -60,7 +60,7 @@ with tab1:
     x = st.number_input("Enter Years of Experience", value=1.0)
     if st.button("Predict", key="m1"):
         result = salary_predict(x)
-        st.success(f"Prediction: {result}")
+        st.success(f"Predicted Salary: {result}")
 
     salary_data_X = np.array(salary_data["YearsExperience"])
     salary_data_X = salary_data_X.reshape(-1, 1)
@@ -83,7 +83,7 @@ with tab2:
     y = st.number_input("Enter Experience", value=1)
     if st.button("Predict", key="m2"):
         result = income_predict(x, y)
-        st.success(f"Prediction: {result}")
+        st.success(f"Predicted Income: {result}")
 
     x_surf, y_surf = np.meshgrid(
     np.linspace(min(income_dataset["experience"]), max(income_dataset["experience"]), 50),
@@ -125,7 +125,7 @@ with tab3:
     y = st.number_input("Enter Radio", value=1.0)
     if st.button("Predict", key="m3"):
         result = advertising_predict(x, y)
-        st.success(f"Prediction: {result}")
+        st.success(f"Predicted Income: {result}")
 
     corr = advertising_dataset.corr()
     fig, ax = plt.subplots()
