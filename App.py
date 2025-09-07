@@ -110,6 +110,7 @@ with tab2:
     fig = go.Figure(data=[surface, scatter])
     fig.update_layout(
         scene=dict(
+            height=800,
             xaxis_title="Experience",
             yaxis_title="Age",
             zaxis_title="Income"
@@ -159,6 +160,7 @@ with tab3:
     fig = go.Figure(data=[surface, scatter])
     fig.update_layout(
         scene=dict(
+            height=800,
             xaxis_title="Experience",
             yaxis_title="Age",
             zaxis_title="Income"
