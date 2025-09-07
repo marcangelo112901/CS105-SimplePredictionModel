@@ -1,0 +1,2 @@
+Advertising Dataset
+This dataset contains data about the sales of a product in relation to the advertising budgets spent on TV, radio and newspaper. It's commonly used to explore the relationship between advertising efforts and sales.
