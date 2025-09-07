@@ -53,7 +53,7 @@ load_models()
 load_datasets()
 
 # Tabs
-tab1, tab2, tab3 = st.tabs(["Salary Prediction Model", "Salary Prediction Model", "Advertising Prediction Model"])
+tab1, tab2, tab3 = st.tabs(["Salary Prediction Model", "Income Prediction Model", "Advertising Prediction Model"])
 
 with tab1:
     st.subheader("Salary Prediction Model")
@@ -78,7 +78,7 @@ with tab1:
     st.pyplot(fig)
 
 with tab2:
-    st.subheader("Salary Prediction Model")
+    st.subheader("Income Prediction Model")
     x = st.number_input("Enter Age", value=1)
     y = st.number_input("Enter Experience", value=1)
     if st.button("Predict", key="m2"):
